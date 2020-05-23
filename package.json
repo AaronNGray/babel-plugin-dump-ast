@@ -1,0 +1,36 @@
+{
+  "name": "babel-plugin-dump-ast",
+  "version": "0.0.1",
+  "description": "Babel plugin to dump AST to a file",
+  "files": [
+    "dist/*",
+    "README.md"
+  ],
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "lint": "tslint --project .",
+    "prettify": "./node_modules/.bin/prettier --write \"{src,test}/**/*.{js,ts,tsx}\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/AaronNGray/babel-plugin-dump-ast.git"
+  },
+  "dependencies": {
+    "@babel/core": "^7.4.4",
+    "@babel/template": "^7.7.0",
+    "@babel/traverse": "^7.7.0",
+    "@babel/types": "^7.7.4",
+    "@types/babel__core": "^7.1.7"
+  },
+  "devDependencies": {
+    "babel-plugin-tester": "^7.0.1",
+    "prettier": "^1.17.1",
+    "tslint": "^5.20.1",
+    "tslint-config-prettier": "^1.18.0",
+    "tslint-plugin-prettier": "^2.0.1",
+    "typescript": "^3.7.2"
+  },
+  "author": "AaronNGray",
+  "license": "MIT"
+}
