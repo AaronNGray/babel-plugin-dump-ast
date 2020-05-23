@@ -11,7 +11,7 @@ const visitor: Visitor<PluginPass> = {
 export default (_babel: any, options: PluginOptions = {} as PluginOptions) => {
   console.log("babel-plugin-dump-ast: plugin install: ", options);
   return {
-    name: 'babel-plugin-flow-to-typescript',
+    name: 'babel-plugin-dump-ast',
     visitor,
 
     // tslint:disable-next-line:no-any
